@@ -11,9 +11,8 @@ include_once "../global_tools.php";
 		"Samsung Apps Patcher for Samsung phones with custom ROMs.",
 		null, // todo: add image
 		null,
-		"2022-03-12",
-		"InteractiveResource",
-		false
+		"2022-03-14",
+		"Software"
 	); ?>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
