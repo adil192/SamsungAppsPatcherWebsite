@@ -73,9 +73,9 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Samsung Wearable", "wearable.apk", null, "8 January 2022"),
 		new SamsungApp("Accessory Service", "accessoryservice.apk", null, "29 December 2021"),
 	]); ?>
-</div>
 
-<hr>
+    <hr>
+</div>
 
 <div class="container">
     <h2>Watch plugins</h2>
@@ -88,9 +88,9 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Gear Fit2 Plugin", "gearfit2plugin.apk", null, "7 January 2022"),
 		new SamsungApp("Gear S Plugin", "gearsportplugin.apk", null, "14 February 2022"),
 	]); ?>
-</div>
 
-<hr>
+    <hr>
+</div>
 
 <div class="container">
     <h2>Other plugins</h2>
