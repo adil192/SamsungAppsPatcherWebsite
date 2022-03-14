@@ -31,6 +31,8 @@ include_once "../global_tools.php";
     <p>Samsung Apps Patcher for Samsung phones with custom ROMs.</p>
 </div>
 
+<hr>
+
 <?php
 class SamsungApp {
     public string $displayName;
@@ -73,9 +75,9 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Samsung Wearable", "wearable.apk", "Wear.webp", "8 January 2022"),
 		new SamsungApp("Accessory Service", "accessoryservice.apk", "SamsungAccessoryService.webp", "29 December 2021"),
 	]); ?>
-
-    <hr>
 </div>
+
+<hr>
 
 <div class="container">
     <h2>Watch plugins</h2>
@@ -88,9 +90,9 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Gear Fit2 Plugin", "gearfit2plugin.apk", "Wear.webp", "7 January 2022"),
 		new SamsungApp("Gear S Plugin", "gearsportplugin.apk", "Wear.webp", "14 February 2022"),
 	]); ?>
-
-    <hr>
 </div>
+
+<hr>
 
 <div class="container">
     <h2>Other plugins</h2>
@@ -102,6 +104,8 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Galaxy Buds Live Manager", "budsliveplugin.apk", "Buds.webp", "16 January 2022"),
 	]); ?>
 </div>
+
+<hr>
 
 <div class="container-fluid">
     <h2>Archive</h2>
