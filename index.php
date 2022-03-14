@@ -22,6 +22,16 @@ include_once "../global_tools.php";
         .header {
             padding-top: 1rem;
         }
+        .header-row {
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 1rem;
+        }
+        .github-icon {
+            width: calc(1.375rem + 1.5vw);
+            height: 100%;
+            object-fit: contain;
+        }
         .card {
             width: 10rem;
         }
@@ -35,7 +45,12 @@ include_once "../global_tools.php";
 <body>
 
 <div class="header container-fluid">
-    <h1>SamsungAppsPatcher</h1>
+    <div class="header-row">
+        <h1>SamsungAppsPatcher</h1>
+        <a href="https://github.com/adil192/SamsungAppsPatcher">
+            <img class="github-icon" src="../assets/images/logos/GitHub-Mark.svg" alt="GitHub icon link">
+        </a>
+    </div>
     <p>Samsung Apps Patcher for Samsung phones with custom ROMs.</p>
 </div>
 
