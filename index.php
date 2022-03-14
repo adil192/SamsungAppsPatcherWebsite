@@ -103,6 +103,12 @@ function genApps(array $samsungApps) {
 	]); ?>
 </div>
 
+<div class="container-fluid">
+    <h2>Archive</h2>
+    <p>You can find older versions of these apps, as well as a platform-tools zip,
+        in <a href="https://mega.nz/folder/sUFj2C5b#M4zEP-c9ylY-ENxPw7qCUQ">this MEGA drive</a>.</p>
+</div>
+
 
 </body>
 </html>
