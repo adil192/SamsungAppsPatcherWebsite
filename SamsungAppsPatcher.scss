@@ -23,6 +23,12 @@
 	.card {
 		width: 6rem;
 		font-size: 0.45rem;
+
+		// force all icons to have the same border radius
+		border-top-left-radius: 1.2rem;
+		border-top-right-radius: 1.2rem;
+		overflow: hidden;
+
 		h3 {
 			font-size: 1.6em;
 		}
@@ -42,6 +48,9 @@ hr {
 		.card {
 			width: 10rem;
 			font-size: 0.9rem;
+			
+			border-top-left-radius: 2rem;
+			border-top-right-radius: 2rem;
 		}
 	}
 }
