@@ -36,13 +36,11 @@ class SamsungApp {
     public string $displayName;
     public string $dl;
     public string $icon;
-    public string $packageName;
 
-    public function __construct(string $displayName, string $dl = null, string $icon = null, string $packageName = null) {
+    public function __construct(string $displayName, string $dl = null, string $icon = null) {
         $this->displayName = $displayName;
         $this->dl = $dl ?? "";
         $this->icon = $icon ?? "Wear.png";
-        $this->packageName = $packageName ?? "";
     }
 }
 function genApps(array $samsungApps) {
@@ -69,9 +67,9 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Core Apps</h2>
 	<?php genApps([
-		new SamsungApp("Samsung Health", "shealth.apk", null, "com.sec.android.app.shealth"),
-		new SamsungApp("Samsung Wearable", "wearable.apk", null, "com.samsung.android.app.watchmanager"),
-		new SamsungApp("Accessory Service", "accessoryservice.apk", null, "com.samsung.accessory"),
+		new SamsungApp("Samsung Health", "shealth.apk", null),
+		new SamsungApp("Samsung Wearable", "wearable.apk", null),
+		new SamsungApp("Accessory Service", "accessoryservice.apk", null),
 	]); ?>
 </div>
 
@@ -80,13 +78,13 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Watch plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Watch Plugin", "watchplugin.apk", null, "com.samsung.android.geargplugin"),
-		new SamsungApp("Galaxy Watch3 Plugin", "watch3plugin.apk", null, "com.samsung.android.gearnplugin"),
-		new SamsungApp("Galaxy Watch4 Plugin", "watch4plugin.apk", null, "com.samsung.android.waterplugin"),
-		new SamsungApp("Watch Active Plugin", "activeplugin.apk", null, "com.samsung.android.gearpplugin"),
-		new SamsungApp("Watch Active2 Plugin", "active2plugin.apk", null, "com.samsung.android.gearrplugin"),
-		new SamsungApp("Gear Fit2 Plugin", "gearfit2plugin.apk", null, "com.samsung.android.gearfit2plugin"),
-		new SamsungApp("Gear S Plugin", "gearsportplugin.apk", null, "com.samsung.android.gearoplugin"),
+		new SamsungApp("Galaxy Watch Plugin", "watchplugin.apk", null),
+		new SamsungApp("Galaxy Watch3 Plugin", "watch3plugin.apk", null),
+		new SamsungApp("Galaxy Watch4 Plugin", "watch4plugin.apk", null),
+		new SamsungApp("Watch Active Plugin", "activeplugin.apk", null),
+		new SamsungApp("Watch Active2 Plugin", "active2plugin.apk", null),
+		new SamsungApp("Gear Fit2 Plugin", "gearfit2plugin.apk", null),
+		new SamsungApp("Gear S Plugin", "gearsportplugin.apk", null),
 	]); ?>
 </div>
 
@@ -95,11 +93,11 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Other plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Buds Manager", "budsplugin.apk", null, "com.samsung.accessory.fridaymgr"),
-		new SamsungApp("Galaxy Buds Pro Manage", "budsproplugin.apk", null, "com.samsung.accessory.atticmgr"),
-		new SamsungApp("Galaxy Buds2 Manager", "buds2plugin.apk", null, "com.samsung.accessory.berrymgr"),
-		new SamsungApp("Galaxy Buds+ Manager", "budsplusplugin.apk", null, "com.samsung.accessory.popcornmgr"),
-		new SamsungApp("Galaxy Buds Live Manager", "budsliveplugin.apk", null, "com.samsung.accessory.neobeanmgr"),
+		new SamsungApp("Galaxy Buds Manager", "budsplugin.apk", null),
+		new SamsungApp("Galaxy Buds Pro Manage", "budsproplugin.apk", null),
+		new SamsungApp("Galaxy Buds2 Manager", "buds2plugin.apk", null),
+		new SamsungApp("Galaxy Buds+ Manager", "budsplusplugin.apk", null),
+		new SamsungApp("Galaxy Buds Live Manager", "budsliveplugin.apk", null),
 	]); ?>
 </div>
 
