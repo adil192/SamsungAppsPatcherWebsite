@@ -85,7 +85,7 @@ function genApps(array $samsungApps) {
 ?>
 
 <div class="container">
-    <h2>Core Apps</h2>
+    <h2>Core apps</h2>
 	<?php genApps([
 		new SamsungApp("Samsung Health", "SamsungHealth.webp", "10 March 2022", [
 			["6.21.1.031", "shealth.6.21.1.031.apk"],
