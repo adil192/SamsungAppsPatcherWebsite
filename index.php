@@ -53,7 +53,7 @@ function genApps(array $samsungApps) {
         <div class="card">
             <img src="icons/<?=$app->icon?>" class="card-img-top" alt="<?=$app->displayName?> app icon">
             <div class="card-body">
-                <h5 class="card-title"><?=$app->displayName?></h5>
+                <h3 class="card-title"><?=$app->displayName?></h3>
                 <p class="card-text"><?=$app->packageName?></p>
                 <?php if (!empty($app->dl)) { ?>
                     <a href="dl/<?=$app->dl?>" class="btn btn-primary">Download</a>
