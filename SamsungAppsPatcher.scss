@@ -30,9 +30,17 @@
 		font-size: 0.45rem;
 
 		// force all icons to have the same border radius
-		border-top-left-radius: 1.2rem;
-		border-top-right-radius: 1.2rem;
-		overflow: hidden;
+		border: none;
+		.card-img-top {
+			border-top-left-radius: 1.2rem;
+			border-top-right-radius: 1.2rem;
+			border: 1px solid rgba(0,0,0,.125);
+			border-bottom: 0;
+		}
+		.card-body {
+			border: 1px solid rgba(0,0,0,.125);
+			border-top: none;
+		}
 
 		h3 {
 			font-size: 1.8em;
@@ -63,8 +71,10 @@ hr {
 			width: 10rem;
 			font-size: 0.9rem;
 
-			border-top-left-radius: 2rem;
-			border-top-right-radius: 2rem;
+			.card-img-top {
+				border-top-left-radius: 2rem;
+				border-top-right-radius: 2rem;
+			}
 		}
 	}
 }
