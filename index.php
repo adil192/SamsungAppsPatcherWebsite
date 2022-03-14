@@ -69,7 +69,7 @@ function genApps(array $samsungApps) {
                         </button>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="<?=$app->dls[0][1]?>"><?=$app->dls[0][0]?></a></li>
-                            <li><hr class="dropdown-divider"></li>
+                            <?php if ($count > 1) { ?><li><hr class="dropdown-divider"></li><?php } ?>
                             <?php for ($d = 1; $d < $count; ++$d) { ?>
                                 <li><a class="dropdown-item" href="<?=$app->dls[$d][1]?>"><?=$app->dls[$d][0]?></a></li>
                             <?php } ?>
