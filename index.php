@@ -41,7 +41,7 @@ class SamsungApp {
     public function __construct(string $displayName, string $dl = null, string $icon = null, $date = null) {
         $this->displayName = $displayName;
         $this->dl = $dl ?? "";
-        $this->icon = $icon ?? "Wear.png";
+        $this->icon = $icon ?? "fallback.png";
         $this->date = $date ?? "";
     }
 }
@@ -69,9 +69,9 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Core Apps</h2>
 	<?php genApps([
-		new SamsungApp("Samsung Health", "shealth.apk", null, "14 February 2022"),
-		new SamsungApp("Samsung Wearable", "wearable.apk", null, "8 January 2022"),
-		new SamsungApp("Accessory Service", "accessoryservice.apk", null, "29 December 2021"),
+		new SamsungApp("Samsung Health", "shealth.apk", "SamsungHealth.png", "14 February 2022"),
+		new SamsungApp("Samsung Wearable", "wearable.apk", "Wear.png", "8 January 2022"),
+		new SamsungApp("Accessory Service", "accessoryservice.apk", "SamsungAccessoryService.png", "29 December 2021"),
 	]); ?>
 
     <hr>
@@ -80,13 +80,13 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Watch plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Watch Plugin", "watchplugin.apk", null, "14 February 2022"),
-		new SamsungApp("Galaxy Watch3 Plugin", "watch3plugin.apk", null, "14 February 2022"),
-		new SamsungApp("Galaxy Watch4 Plugin", "watch4plugin.apk", null, "9 January 2022"),
-		new SamsungApp("Watch Active Plugin", "activeplugin.apk", null, "14 February 2022"),
-		new SamsungApp("Watch Active2 Plugin", "active2plugin.apk", null, "14 February 2022"),
-		new SamsungApp("Gear Fit2 Plugin", "gearfit2plugin.apk", null, "7 January 2022"),
-		new SamsungApp("Gear S Plugin", "gearsportplugin.apk", null, "14 February 2022"),
+		new SamsungApp("Galaxy Watch Plugin", "watchplugin.apk", "Wear.png", "14 February 2022"),
+		new SamsungApp("Galaxy Watch3 Plugin", "watch3plugin.apk", "Wear.png", "14 February 2022"),
+		new SamsungApp("Galaxy Watch4 Plugin", "watch4plugin.apk", "Wear.png", "9 January 2022"),
+		new SamsungApp("Watch Active Plugin", "activeplugin.apk", "Wear.png", "14 February 2022"),
+		new SamsungApp("Watch Active2 Plugin", "active2plugin.apk", "Wear.png", "14 February 2022"),
+		new SamsungApp("Gear Fit2 Plugin", "gearfit2plugin.apk", "Wear.png", "7 January 2022"),
+		new SamsungApp("Gear S Plugin", "gearsportplugin.apk", "Wear.png", "14 February 2022"),
 	]); ?>
 
     <hr>
@@ -96,10 +96,10 @@ function genApps(array $samsungApps) {
     <h2>Other plugins</h2>
 	<?php genApps([
 		new SamsungApp("Galaxy Buds Manager", "budsplugin.apk", null, "16 January 2022"),
-		new SamsungApp("Galaxy Buds Pro Manage", "budsproplugin.apk", null, "30 January 2022"),
-		new SamsungApp("Galaxy Buds2 Manager", "buds2plugin.apk", null, "30 January 2022"),
-		new SamsungApp("Galaxy Buds+ Manager", "budsplusplugin.apk", null, "16 January 2022"),
-		new SamsungApp("Galaxy Buds Live Manager", "budsliveplugin.apk", null, "16 January 2022"),
+		new SamsungApp("Galaxy Buds Pro Manage", "budsproplugin.apk", "Buds.png", "30 January 2022"),
+		new SamsungApp("Galaxy Buds2 Manager", "buds2plugin.apk", "Buds.png", "30 January 2022"),
+		new SamsungApp("Galaxy Buds+ Manager", "budsplusplugin.apk", "Buds.png", "16 January 2022"),
+		new SamsungApp("Galaxy Buds Live Manager", "budsliveplugin.apk", "Buds.png", "16 January 2022"),
 	]); ?>
 </div>
 
