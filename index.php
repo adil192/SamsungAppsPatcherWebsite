@@ -89,13 +89,13 @@ function genApps(array $samsungApps) {
 	<?php genApps([
 		new SamsungApp("Samsung Health", "SamsungHealth.webp", "10 March 2022", [
 			["6.21.1.031", "shealth.6.21.1.031.apk"],
-			["oldest", "shealth.apk"]
+			["6.21.0.049", "shealth.apk"]
 		]),
-		new SamsungApp("Samsung Wearable", "Wear.webp", "8 January 2022", [
-			["oldest", "wearable.apk"]
+		new SamsungApp("Samsung Wearable", "Wear.webp", "31 December 2021", [
+			["2.2.47.21122061", "wearable.apk"]
 		]),
 		new SamsungApp("Accessory Service", "SamsungAccessoryService.webp", "29 December 2021", [
-			["oldest", "accessoryservice.apk"]
+			["3.1.95.21123", "accessoryservice.apk"]
 		]),
 	]); ?>
 </div>
@@ -105,26 +105,26 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Watch plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "14 February 2022", [
-			["oldest", "watchplugin.apk"]
+		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "11 February 2022", [
+			["2.2.05.22012741N", "watchplugin.apk"]
 		]),
-		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "14 February 2022", [
-			["oldest", "watch3plugin.apk"]
+		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "11 February 2022", [
+			["2.2.09.22012741N", "watch3plugin.apk"]
 		]),
-		new SamsungApp("Galaxy Watch4 Plugin", "Wear.webp", "9 January 2022", [
-			["oldest", "watch4plugin.apk"]
+		new SamsungApp("Galaxy Watch4 Plugin", "Wear.webp", "8 December 2021", [
+			["2.2.11.21120251", "watch4plugin.apk"]
 		]),
-		new SamsungApp("Watch Active Plugin", "Wear.webp", "14 February 2022", [
-			["oldest", "activeplugin.apk"]
+		new SamsungApp("Watch Active Plugin", "Wear.webp", "11 February 2022", [
+			["2.2.07.22012741N", "activeplugin.apk"]
 		]),
 		new SamsungApp("Watch Active2 Plugin", "Wear.webp", "14 February 2022", [
-			["oldest", "active2plugin.apk"]
+			["2.2.08.22012751", "active2plugin.apk"]
 		]),
-		new SamsungApp("Gear Fit2 Plugin", "Wear.webp", "7 January 2022", [
-			["oldest", "gearfit2plugin.apk"]
+		new SamsungApp("Gear Fit2 Plugin", "Wear.webp", "22 November 2021", [
+			["2.2.04.21111241N", "gearfit2plugin.apk"]
 		]),
-		new SamsungApp("Gear S Plugin", "Wear.webp", "14 February 2022", [
-			["oldest", "gearsportplugin.apk"]
+		new SamsungApp("Gear S Plugin", "Wear.webp", "11 February 2022", [
+			["2.2.03.22012741N", "gearsportplugin.apk"]
 		]),
 	]); ?>
 </div>
@@ -134,20 +134,20 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Other plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Buds Manager", null, "16 January 2022", [
-			["oldest", "budsplugin.apk"]
+		new SamsungApp("Galaxy Buds Manager", null, "6 January 2022", [
+			["2.1.21121751", "budsplugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds Pro Manager", "Buds.webp", "30 January 2022", [
-			["oldest", "budsproplugin.apk"]
+		new SamsungApp("Galaxy Buds Pro Manager", "Buds.webp", "27 January 2022", [
+			["4.0.22012051", "budsproplugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds2 Manager", "Buds.webp", "30 January 2022", [
-			["oldest", "buds2plugin.apk"]
+		new SamsungApp("Galaxy Buds2 Manager", "Buds.webp", "27 January 2022", [
+			["4.0.22012051", "buds2plugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "16 January 2022", [
-			["oldest", "budsplusplugin.apk"]
+		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "11 January 2022", [
+			["4.0.22010451", "budsplusplugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds Live Manager", "Buds.webp", "16 January 2022", [
-			["oldest", "budsliveplugin.apk"]
+		new SamsungApp("Galaxy Buds Live Manager", "Buds.webp", "11 January 2022", [
+			["4.0.22010451", "budsliveplugin.apk"]
 		]),
 	]); ?>
 </div>
