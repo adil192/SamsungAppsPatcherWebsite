@@ -37,9 +37,17 @@
 		h3 {
 			font-size: 1.8em;
 		}
+		.btn-group {
+			width: 100%;
+		}
 		.btn {
 			font-size: 1.1em;
 			max-width: 100%;
+			padding: .250rem .50rem;
+		}
+		.btn.dropdown-toggle-split {
+			padding: 0;
+			padding-inline-end: 0.25rem;
 		}
 	}
 }
