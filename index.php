@@ -42,11 +42,13 @@ include_once "../global_tools.php";
 <?php
 class SamsungApp {
     public string $displayName;
+    public string $dl;
     public string $icon;
     public string $packageName;
 
-    public function __construct(string $displayName, string $icon = null, string $packageName = null) {
+    public function __construct(string $displayName, string $dl = null, string $icon = null, string $packageName = null) {
         $this->displayName = $displayName;
+        $this->dl = $dl ?? "";
         $this->icon = $icon ?? "Wear.png";
         $this->packageName = $packageName ?? "";
     }
@@ -61,7 +63,9 @@ function genApps(array $samsungApps) {
             <div class="card-body">
                 <h5 class="card-title"><?=$app->displayName?></h5>
                 <p class="card-text"><?=$app->packageName?></p>
-                <a href="#" class="btn btn-primary">Download</a>
+                <?php if (!empty($app->dl)) { ?>
+                    <a href="dl/<?=$app->dl?>" class="btn btn-primary">Download</a>
+                <?php } ?>
             </div>
         </div>
         <?php
@@ -73,7 +77,7 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Core Apps</h2>
     <?php genApps([
-            new SamsungApp("SHealth"),
+            new SamsungApp("SHealth", "shealth.apk"),
             new SamsungApp("Wearable"),
             new SamsungApp("Accessory Service")
     ]); ?>
