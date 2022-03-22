@@ -38,12 +38,15 @@ class SamsungApp {
     public array $dls;
     public string $icon;
     public string $date;
+    public string $extraText;
 
-    public function __construct(string $displayName, string $icon = null, $date = null, array $dls = null) {
+    public function __construct(string $displayName, string $icon = null, string $date = null,
+                                array $dls = null, string $extraText = null) {
         $this->displayName = $displayName;
         $this->dls = $dls ?? [];
         $this->icon = $icon ?? "fallback.webp";
         $this->date = $date ?? "";
+        $this->extraText = $extraText ?? "";
     }
 }
 function genApps(array $samsungApps) {
@@ -56,6 +59,7 @@ function genApps(array $samsungApps) {
             <div class="card-body">
                 <h3 class="card-title"><?=$app->displayName?></h3>
                 <p class="card-text"><?=$app->date?></p>
+                <p class="card-text"><?=$app->extraText?></p>
                 <?php
                 $count = count($app->dls);
                 if ($count > 0) {
@@ -108,7 +112,7 @@ function genApps(array $samsungApps) {
 	<?php genApps([
 		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "11 February 2022", [
 			["2.2.05.22012741N", "watchplugin.apk"]
-		]),
+		], "This is for the Galaxy Watch ONLY. Blame Samsung's naming scheme for the confusion."),
 		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "11 February 2022", [
 			["2.2.09.22012741N", "watch3plugin.apk"]
 		]),
