@@ -91,7 +91,8 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Core apps</h2>
 	<?php genApps([
-		new SamsungApp("Samsung Health", "SamsungHealth.webp", "10 March 2022", [
+		new SamsungApp("Samsung Health", "SamsungHealth.webp", "30 March 2022", [
+			["6.21.2.007", "shealth.6.21.2.007.apk"],
 			["6.21.1.031", "shealth.6.21.1.031.apk"],
 			["6.21.0.049", "shealth.apk"],
             ["6.19.5.017", "shealth.6.19.5.017.apk"]
@@ -112,7 +113,7 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Watch plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "11 February 2022", [
+		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "23 March 2022", [
 			["2.2.05.22031041N", "watchplugin.2.2.05.22031041.apk"],
 			["2.2.05.22012741N", "watchplugin.apk"]
 		], "This is for the Galaxy Watch ONLY. Blame Samsung's naming scheme for the confusion."),
@@ -122,7 +123,7 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Galaxy Watch4 Plugin", "Wear.webp", "8 December 2021", [
 			["2.2.11.21120251", "watch4plugin.apk"]
 		]),
-		new SamsungApp("Watch Active Plugin", "Wear.webp", "11 February 2022", [
+		new SamsungApp("Watch Active Plugin", "Wear.webp", "23 March 2022", [
 			["2.2.07.22031041N", "activeplugin.2.2.07.22031041.apk"],
 			["2.2.07.22012741N", "activeplugin.apk"]
 		]),
