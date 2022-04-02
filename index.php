@@ -55,7 +55,7 @@ function genApps(array $samsungApps) {
         $app = $samsungApps[$i];
         ?>
         <div class="card">
-            <img src="icons/<?=$app->icon?>" class="card-img-top" alt="<?=$app->displayName?> app icon">
+            <img src="icons/<?=$app->icon?>" class="card-img-top" alt="<?=$app->displayName?> app icon" width="158" height="158">
             <div class="card-body">
                 <h3 class="card-title"><?=$app->displayName?></h3>
                 <p class="card-text"><?=$app->date?></p>
