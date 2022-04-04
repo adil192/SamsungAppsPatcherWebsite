@@ -97,7 +97,7 @@ function genApps(array $samsungApps) {
 			["6.21.0.049", "shealth.apk"],
             ["6.19.5.017", "shealth.6.19.5.017.apk"]
 		]),
-		new SamsungApp("Samsung Wearable", "Wear.webp", "31 December 2021", [
+		new SamsungApp("Galaxy Wearable", "Wear.webp", "31 December 2021", [
 			["2.2.47.21122061", "wearable.apk"],
 			["HUAWEI", "wearable-huawei.apk"],
 			["HUAWEI-old", "wearable-huawei-old.apk"],
@@ -130,7 +130,8 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Watch Active2 Plugin", "Wear.webp", "14 February 2022", [
 			["2.2.08.22012751", "active2plugin.apk"]
 		]),
-		new SamsungApp("Gear Fit2 Plugin", "Wear.webp", "22 November 2021", [
+		new SamsungApp("Gear Fit2 Plugin", "Wear.webp", "30 March 2021", [
+			["2.2.04.22032341N", "gearfit2plugin.2.2.04.22032341N.apk"],
 			["2.2.04.21111241N", "gearfit2plugin.apk"]
 		]),
 		new SamsungApp("Gear S Plugin", "Wear.webp", "11 February 2022", [
@@ -147,18 +148,20 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Galaxy Buds Manager", null, "6 January 2022", [
 			["2.1.21121751", "budsplugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds Pro Manager", "Buds.webp", "27 January 2022", [
+		new SamsungApp("Galaxy Buds Pro Manager", "Buds.webp", "25 March 2022", [
 			["4.1.22031451", "budsproplugin.4.1.22031451.apk"],
 			["4.0.22012051", "budsproplugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds2 Manager", "Buds.webp", "27 January 2022", [
+		new SamsungApp("Galaxy Buds2 Manager", "Buds.webp", "30 March 2022", [
+			["4.1.22031451", "buds2plugin.4.1.22031451.apk"],
 			["4.0.22012051", "buds2plugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "11 January 2022", [
+		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "23 March 2022", [
 			["4.1.22031451", "budsplusplugin.4.1.22031451.apk"],
 			["4.0.22010451", "budsplusplugin.apk"]
 		]),
-		new SamsungApp("Galaxy Buds Live Manager", "Buds.webp", "11 January 2022", [
+		new SamsungApp("Galaxy Buds Live Manager", "Buds.webp", "30 March 2022", [
+			["4.1.22032351", "budsliveplugin.4.1.22032351.apk"],
 			["4.0.22010451", "budsliveplugin.apk"]
 		]),
 	]); ?>
