@@ -100,8 +100,6 @@ function genApps(array $samsungApps) {
 		]),
 		new SamsungApp("Galaxy Wearable", "Wear.webp", "31 December 2021", [
 			["2.2.47.21122061", "wearable.apk"],
-			["HUAWEI", "wearable-huawei.apk"],
-			["HUAWEI-old", "wearable-huawei-old.apk"],
 		]),
 		new SamsungApp("Accessory Service", "SamsungAccessoryService.webp", "29 December 2021", [
 			["3.1.95.21123", "accessoryservice.apk"]
