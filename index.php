@@ -28,6 +28,7 @@ include_once "../global_tools.php";
         </a>
     </div>
     <p>Samsung Apps Patcher for Samsung phones with custom ROMs.</p>
+    <iframe src="https://ghbtns.com/github-btn.html?user=adil192&repo=SamsungAppsPatcher&type=star&count=true&size=large" frameborder="0" scrolling="0" width="170" height="30" title="GitHub"></iframe>
 </div>
 
 <hr>
