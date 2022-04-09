@@ -34,19 +34,27 @@ include_once "../global_tools.php";
 <hr>
 
 <?php
+class Ratings {
+    static string $NotWorking = "☆☆☆ Not working";
+    static string $NotTested = "★☆☆ Not tested (please tell me if it works)";
+    static string $PartiallyWorking = "★★☆ Partially working (YMMV)";
+    static string $Working = "★★★ Working";
+}
 class SamsungApp {
     public string $displayName;
     public array $dls;
     public string $icon;
     public string $date;
+    public string $rating;
     public string $extraText;
 
     public function __construct(string $displayName, string $icon = null, string $date = null,
-                                array $dls = null, string $extraText = null) {
+                                array $dls = null, string $rating = null, string $extraText = null) {
         $this->displayName = $displayName;
         $this->dls = $dls ?? [];
         $this->icon = $icon ?? "fallback.webp";
         $this->date = $date ?? "";
+        $this->rating = $rating ?? Ratings::$NotTested;
         $this->extraText = $extraText ?? "";
     }
 }
@@ -60,6 +68,7 @@ function genApps(array $samsungApps) {
             <div class="card-body">
                 <h3 class="card-title"><?=$app->displayName?></h3>
                 <p class="card-text"><?=$app->date?></p>
+                <p class="card-text"><?=$app->rating?></p>
                 <p class="card-text"><?=$app->extraText?></p>
                 <?php
                 $count = count($app->dls);
@@ -97,13 +106,13 @@ function genApps(array $samsungApps) {
 			["6.21.1.031", "shealth.6.21.1.031.apk"],
 			["6.21.0.049", "shealth.apk"],
             ["6.19.5.017", "shealth.6.19.5.017.apk"]
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Galaxy Wearable", "Wear.webp", "31 December 2021", [
 			["2.2.47.21122061", "wearable.apk"],
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Accessory Service", "SamsungAccessoryService.webp", "29 December 2021", [
 			["3.1.95.21123", "accessoryservice.apk"]
-		]),
+		], Ratings::$Working),
 	]); ?>
 </div>
 
@@ -115,27 +124,28 @@ function genApps(array $samsungApps) {
 		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "23 March 2022", [
 			["2.2.05.22031041N", "watchplugin.2.2.05.22031041.apk"],
 			["2.2.05.22012741N", "watchplugin.apk"]
-		], "This is for the Galaxy Watch ONLY. Blame Samsung's naming scheme for the confusion."),
+		], Ratings::$Working, "This is for the Galaxy Watch ONLY. Blame Samsung's naming scheme for the confusion."),
 		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "11 February 2022", [
 			["2.2.09.22012741N", "watch3plugin.apk"]
-		]),
+		], Ratings::$NotTested),
 		new SamsungApp("Galaxy Watch4 Plugin", "Wear.webp", "8 December 2021", [
 			["2.2.11.21120251", "watch4plugin.apk"]
-		]),
+		], Ratings::$NotWorking,
+            '<a href="https://forum.xda-developers.com/t/restrictions-removed-samsung-health-monitor-wearos-1-1-1-191-root-age-country-device-restriction-removed-23rd-march-2022.4322527/">This xda post</a> seems to have some information about getting the Watch4 working.'),
 		new SamsungApp("Watch Active Plugin", "Wear.webp", "23 March 2022", [
 			["2.2.07.22031041N", "activeplugin.2.2.07.22031041.apk"],
 			["2.2.07.22012741N", "activeplugin.apk"]
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Watch Active2 Plugin", "Wear.webp", "14 February 2022", [
 			["2.2.08.22012751", "active2plugin.apk"]
-		]),
+		], Ratings::$NotWorking),
 		new SamsungApp("Gear Fit2 Plugin", "Wear.webp", "30 March 2021", [
 			["2.2.04.22032341N", "gearfit2plugin.2.2.04.22032341N.apk"],
 			["2.2.04.21111241N", "gearfit2plugin.apk"]
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Gear S Plugin", "Wear.webp", "11 February 2022", [
 			["2.2.03.22012741N", "gearsportplugin.apk"]
-		]),
+		], Ratings::$Working),
 	]); ?>
 </div>
 
@@ -146,23 +156,23 @@ function genApps(array $samsungApps) {
 	<?php genApps([
 		new SamsungApp("Galaxy Buds Manager", null, "6 January 2022", [
 			["2.1.21121751", "budsplugin.apk"]
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Galaxy Buds Pro Manager", "Buds.webp", "25 March 2022", [
 			["4.1.22031451", "budsproplugin.4.1.22031451.apk"],
 			["4.0.22012051", "budsproplugin.apk"]
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Galaxy Buds2 Manager", "Buds.webp", "30 March 2022", [
 			["4.1.22031451", "buds2plugin.4.1.22031451.apk"],
 			["4.0.22012051", "buds2plugin.apk"]
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "23 March 2022", [
 			["4.1.22031451", "budsplusplugin.4.1.22031451.apk"],
 			["4.0.22010451", "budsplusplugin.apk"]
-		]),
+		], Ratings::$Working),
 		new SamsungApp("Galaxy Buds Live Manager", "Buds.webp", "30 March 2022", [
 			["4.1.22032351", "budsliveplugin.4.1.22032351.apk"],
 			["4.0.22010451", "budsliveplugin.apk"]
-		]),
+		], Ratings::$Working),
 	]); ?>
 </div>
 
