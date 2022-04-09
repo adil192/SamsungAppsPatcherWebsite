@@ -26,14 +26,14 @@
 	margin-bottom: 2rem;
 
 	.card {
-		width: 6rem;
-		font-size: 0.45rem;
+		width: 10rem;
+		font-size: 0.9rem;
 
 		// force all icons to have the same border radius
 		border: none;
 		.card-img-top {
-			border-top-left-radius: 1.2rem;
-			border-top-right-radius: 1.2rem;
+			border-top-left-radius: 2rem;
+			border-top-right-radius: 2rem;
 			border: 1px solid rgba(0,0,0,.125);
 			border-bottom: 0;
 			height: auto;
@@ -71,15 +71,40 @@ hr {
 	opacity: 0;
 }
 
-@media screen and (min-width: 564px) {
+@media screen and (max-width: 565px) {
 	.cards-parent {
 		.card {
-			width: 10rem;
-			font-size: 0.9rem;
+			width: 100%;
+			flex-flow: row nowrap;
+			gap: 1rem;
 
 			.card-img-top {
-				border-top-left-radius: 2rem;
-				border-top-right-radius: 2rem;
+				flex-shrink: 0;
+				width: 15%;
+				aspect-ratio: 1;
+				object-fit: contain;
+				align-self: flex-start;
+				border: none;
+				border-radius: 25%;
+			}
+			.card-body {
+				border: none;
+				padding: 0;
+			}
+			.card-text-group {
+				display: flex;
+				flex-flow: row wrap;
+				margin-bottom: 1rem;
+
+				> .card-text {
+					flex: 1;
+				}
+				> .card-text:nth-last-child(1) {
+					text-align: end;
+				}
+			}
+			.card-text {
+				margin: 0;
 			}
 		}
 	}

@@ -67,8 +67,10 @@ function genApps(array $samsungApps) {
             <img src="icons/<?=$app->icon?>" class="card-img-top" alt="<?=$app->displayName?> app icon" width="158" height="158">
             <div class="card-body">
                 <h3 class="card-title"><?=$app->displayName?></h3>
-                <p class="card-text"><?=$app->date?></p>
-                <p class="card-text"><?=$app->rating?></p>
+                <div class="card-text-group">
+                    <p class="card-text"><?=$app->date?></p>
+                    <p class="card-text"><?=$app->rating?></p>
+                </div>
                 <p class="card-text"><?=$app->extraText?></p>
                 <?php
                 $count = count($app->dls);
