@@ -109,3 +109,28 @@ hr {
 		}
 	}
 }
+
+@media (prefers-color-scheme: dark) {
+	html, body {
+		background: black;
+		color: white;
+	}
+	.github-icon {
+		filter: brightness(0) invert(1);
+	}
+	.card {
+		background: transparent;
+	}
+	.dropdown-menu {
+		background: #222;
+		color: white;
+		.dropdown-item {
+			color: white;
+		}
+		.dropdown-item:focus,
+		.dropdown-item:hover {
+			color: white;
+			background-color: #555;
+		}
+	}
+}
