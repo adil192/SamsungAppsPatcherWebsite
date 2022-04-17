@@ -14,7 +14,7 @@ include_once "../global_tools.php";
 		"Software"
 	); ?>
 
-    <link href="../assets/ext/bootstrap.5.1.3.min.css" rel="stylesheet">
+    <link href="/assets/ext/bootstrap.5.1.3.min.css" rel="stylesheet">
 
     <link href="SamsungAppsPatcher.css" rel="stylesheet" type="text/css">
 </head>
@@ -193,7 +193,7 @@ function genApps(array $samsungApps) {
         in <a href="https://mega.nz/folder/sUFj2C5b#M4zEP-c9ylY-ENxPw7qCUQ">this MEGA drive</a>.</p>
 </div>
 
-<script src="../assets/ext/bootstrap.bundle.5.1.3.min.js"></script>
+<script src="/assets/ext/bootstrap.bundle.5.1.3.min.js"></script>
 
 </body>
 </html>
