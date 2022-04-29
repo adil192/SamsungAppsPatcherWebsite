@@ -125,12 +125,14 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Watch plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "11 April 2022", [
+		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "18 April 2022", [
+			["2.2.05.22041541N", "watchplugin.2.2.05.22041541N.apk"],
 			["2.2.05.22040441N", "watchplugin.2.2.05.22040441N.apk"],
 			["2.2.05.22031041N", "watchplugin.2.2.05.22031041.apk"],
 			["2.2.05.22012741N", "watchplugin.apk"]
 		], Ratings::$Working, "This is for the Galaxy Watch ONLY. Blame Samsung's naming scheme for the confusion."),
-		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "11 April 2022", [
+		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "18 April 2022", [
+			["2.2.09.22041541N", "watch3plugin.2.2.09.22041541N.apk"],
 			["2.2.09.22040441N", "watch3plugin.2.2.09.22040441N.apk"],
 			["2.2.09.22012741N", "watch3plugin.apk"]
 		], Ratings::$NotTested),
@@ -138,12 +140,15 @@ function genApps(array $samsungApps) {
 			["2.2.11.21120251", "watch4plugin.apk"]
 		], Ratings::$NotWorking,
             '<a href="https://forum.xda-developers.com/t/restrictions-removed-samsung-health-monitor-wearos-1-1-1-191-root-age-country-device-restriction-removed-23rd-march-2022.4322527/">This xda post</a> seems to have some information about getting the Watch4 working.'),
-		new SamsungApp("Watch Active Plugin", "Wear.webp", "11 April 2022", [
+		new SamsungApp("Watch Active Plugin", "Wear.webp", "18 April 2022", [
+			["2.2.07.22041541N", "activeplugin.2.2.07.22041541N.apk"],
 			["2.2.07.22040441N", "activeplugin.2.2.07.22040441N.apk"],
 			["2.2.07.22031041N", "activeplugin.2.2.07.22031041.apk"],
 			["2.2.07.22012741N", "activeplugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Watch Active2 Plugin", "Wear.webp", "11 April 2022", [
+		new SamsungApp("Watch Active2 Plugin", "Wear.webp", "18 April 2022", [
+			["2.2.08.22041551", "active2plugin.2.2.08.22041551.apk"],
+			["2.2.08.22041541N", "active2plugin.2.2.08.22041541N.apk"],
 			["2.2.08.22040451", "active2plugin.2.2.08.22040451.apk"],
 			["2.2.08.22040441N", "active2plugin.2.2.08.22040441N.apk"],
 			["2.2.08.22012751", "active2plugin.apk"]
@@ -152,7 +157,8 @@ function genApps(array $samsungApps) {
 			["2.2.04.22032341N", "gearfit2plugin.2.2.04.22032341N.apk"],
 			["2.2.04.21111241N", "gearfit2plugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Gear S Plugin", "Wear.webp", "11 April 2022", [
+		new SamsungApp("Gear S Plugin", "Wear.webp", "18 April 2022", [
+			["2.2.03.22041541N", "gearsportplugin.2.2.03.22041541N.apk"],
 			["2.2.03.22040441N", "gearsportplugin.2.2.03.22040441N.apk"],
 			["2.2.03.22012741N", "gearsportplugin.apk"]
 		], Ratings::$Working),
@@ -176,7 +182,8 @@ function genApps(array $samsungApps) {
 			["4.1.22031451", "buds2plugin.4.1.22031451.apk"],
 			["4.0.22012051", "buds2plugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "23 March 2022", [
+		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "28 April 2022", [
+			["4.1.22041351", "budsplusplugin.4.1.22041351.apk"],
 			["4.1.22031451", "budsplusplugin.4.1.22031451.apk"],
 			["4.0.22010451", "budsplusplugin.apk"]
 		], Ratings::$Working),
