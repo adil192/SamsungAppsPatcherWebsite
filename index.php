@@ -180,12 +180,14 @@ function genApps(array $samsungApps) {
 			["2.1.22040181", "budsplugin.2.1.22040181.apk"],
 			["2.1.21121751", "budsplugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Galaxy Buds Pro Manager", "Buds.webp", "2 May 2022", [
+		new SamsungApp("Galaxy Buds Pro Manager", "Buds.webp", "16 May 2022", [
+			["4.1.22051251", "budsproplugin.4.1.22051251.apk"],
 			["4.1.22042651", "budsproplugin.4.1.22042651.apk"],
 			["4.1.22031451", "budsproplugin.4.1.22031451.apk"],
 			["4.0.22012051", "budsproplugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Galaxy Buds2 Manager", "Buds.webp", "2 May 2022", [
+		new SamsungApp("Galaxy Buds2 Manager", "Buds.webp", "16 May 2022", [
+			["4.1.22051251", "buds2plugin.4.1.22051251.apk"],
 			["4.1.22042651", "buds2plugin.4.1.22042651.apk"],
 			["4.1.22031451", "buds2plugin.4.1.22031451.apk"],
 			["4.0.22012051", "buds2plugin.apk"]
@@ -195,7 +197,8 @@ function genApps(array $samsungApps) {
 			["4.1.22031451", "budsplusplugin.4.1.22031451.apk"],
 			["4.0.22010451", "budsplusplugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Galaxy Buds Live Manager", "Buds.webp", "2 May 2022", [
+		new SamsungApp("Galaxy Buds Live Manager", "Buds.webp", "16 May 2022", [
+			["4.1.22051251", "budsliveplugin.4.1.22051251.apk"],
 			["4.1.22042651", "budsliveplugin.4.1.22042651.apk"],
 			["4.1.22032351", "budsliveplugin.4.1.22032351.apk"],
 			["4.0.22010451", "budsliveplugin.apk"]
