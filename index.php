@@ -137,7 +137,7 @@ function genApps(array $samsungApps) {
 			["2.2.09.22041541N", "watch3plugin.2.2.09.22041541N.apk"],
 			["2.2.09.22040441N", "watch3plugin.2.2.09.22040441N.apk"],
 			["2.2.09.22012741N", "watch3plugin.apk"]
-		], Ratings::$NotTested),
+		], Ratings::$Working),
 		new SamsungApp("Galaxy Watch4 Plugin", "Wear.webp", "8 December 2021", [
 			["2.2.11.21120251", "watch4plugin.apk"]
 		], Ratings::$NotWorking,
