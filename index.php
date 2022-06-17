@@ -33,6 +33,19 @@ include_once "../global_tools.php";
 
 <hr>
 
+<div class="container">
+    <h2>Important notice</h2>
+    <p>
+        As I've moved on from having a Samsung phone and Samsung accessories,
+        I can no longer properly maintain this project.<br>
+        Any builds uploaded in June 2022 or later have not been tested
+        and are simply a continuation of the patches already in place.<br>
+        I would recommend you find a different way of running the Galaxy Wearable apps.
+    </p>
+</div>
+
+<hr>
+
 <?php
 class Ratings {
     static string $NotWorking = "☆☆☆ Not working";
