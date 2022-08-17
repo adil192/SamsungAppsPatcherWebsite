@@ -120,9 +120,6 @@ function genApps(array $samsungApps) {
 			["6.22.1.053", "shealth.6.22.1.053.apk"],
 			["6.22.0.069", "shealth.6.22.0.069.apk"],
 			["6.21.2.007", "shealth.6.21.2.007.apk"],
-			["6.21.1.031", "shealth.6.21.1.031.apk"],
-			["6.21.0.049", "shealth.apk"],
-            ["6.19.5.017", "shealth.6.19.5.017.apk"]
 		], Ratings::$Working),
 		new SamsungApp("Galaxy Wearable", "Wear.webp", "21 July 2022", [
 			["2.2.50.22072061", "wearable.2.2.50.22072061.apk"],
