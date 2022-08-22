@@ -142,7 +142,8 @@ function genApps(array $samsungApps) {
 			["2.2.48.22033061", "wearable.2.2.48.22033061.apk"],
 			["2.2.47.21122061", "wearable.apk"],
 		], Ratings::$Working),
-		new SamsungApp("Accessory Service", "SamsungAccessoryService.webp", "8 April 2022", [
+		new SamsungApp("Accessory Service", "SamsungAccessoryService.webp", "11 August 2022", [
+			["3.1.96.30607", "accessoryservice.3.1.96.30607.apk"],
 			["3.1.96.30104", "accessoryservice.3.1.96.30104.apk"],
 			["3.1.95.21123", "accessoryservice.apk"]
 		], Ratings::$Working),
@@ -189,7 +190,8 @@ function genApps(array $samsungApps) {
 			["2.2.08.22040441N", "active2plugin.2.2.08.22040441N.apk"],
 			["2.2.08.22012751", "active2plugin.apk"]
 		], Ratings::$NotWorking),
-		new SamsungApp("Gear Fit2 Plugin", "Wear.webp", "30 March 2021", [
+		new SamsungApp("Gear Fit2 Plugin", "Wear.webp", "19 August 2021", [
+			["2.2.04.22081141N", "gearfit2plugin.2.2.04.22081141N.apk"],
 			["2.2.04.22032341N", "gearfit2plugin.2.2.04.22032341N.apk"],
 			["2.2.04.21111241N", "gearfit2plugin.apk"]
 		], Ratings::$Working),
@@ -223,7 +225,8 @@ function genApps(array $samsungApps) {
 			["4.1.22031451", "buds2plugin.4.1.22031451.apk"],
 			["4.0.22012051", "buds2plugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "28 April 2022", [
+		new SamsungApp("Galaxy Buds+ Manager", "Buds.webp", "19 August 2022", [
+			["4.1.22081051", "budsplusplugin.4.1.22081051.apk"],
 			["4.1.22041351", "budsplusplugin.4.1.22041351.apk"],
 			["4.1.22031451", "budsplusplugin.4.1.22031451.apk"],
 			["4.0.22010451", "budsplusplugin.apk"]
