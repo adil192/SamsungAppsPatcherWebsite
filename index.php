@@ -46,6 +46,21 @@ include_once "../global_tools.php";
 
 <hr>
 
+<div class="container">
+    <h2>Don't install just one app</h2>
+    <p>
+        All apps in this suite need to be unpatched or patched; they won't be able
+        to work together if you mix them.<br/>
+        Please install all 3 "Core apps" in addition to
+        the plugins for whatever device(s) you own.<br/>
+        If you're unsure, you can run the
+        <a href="https://github.com/adil192/SamsungAppsPatcher/blob/main/wearable-wipe.sh">wearable-wipe.sh</a>
+        script to remove all unpatched Wearable apps before installing new ones.
+    </p>
+</div>
+
+<hr>
+
 <?php
 class Ratings {
     static string $NotWorking = "☆☆☆ Not working";
