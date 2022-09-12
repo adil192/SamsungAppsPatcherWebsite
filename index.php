@@ -131,7 +131,8 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Core apps</h2>
 	<?php genApps([
-		new SamsungApp("Samsung Health", "SamsungHealth.webp", "6 August 2022", [
+		new SamsungApp("Samsung Health", "SamsungHealth.webp", "22 August 2022", [
+			["6.22.2.007", "shealth.6.22.2.007.apk"],
 			["6.22.1.053", "shealth.6.22.1.053.apk"],
 			["6.22.0.069", "shealth.6.22.0.069.apk"],
 			["6.21.2.007", "shealth.6.21.2.007.apk"],
@@ -155,14 +156,16 @@ function genApps(array $samsungApps) {
 <div class="container">
     <h2>Watch plugins</h2>
 	<?php genApps([
-		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "2 May 2022", [
+		new SamsungApp("Galaxy Watch Plugin", "Wear.webp", "30 August 2022", [
+			["2.2.05.22081141N", "watchplugin.2.2.05.22081141N.apk"],
 			["2.2.05.22042841N", "watchplugin.2.2.05.22042841N.apk"],
 			["2.2.05.22041541N", "watchplugin.2.2.05.22041541N.apk"],
 			["2.2.05.22040441N", "watchplugin.2.2.05.22040441N.apk"],
 			["2.2.05.22031041N", "watchplugin.2.2.05.22031041.apk"],
 			["2.2.05.22012741N", "watchplugin.apk"]
 		], Ratings::$Working, "This is for the Galaxy Watch ONLY. Blame Samsung's naming scheme for the confusion."),
-		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "15 July 2022", [
+		new SamsungApp("Galaxy Watch3 Plugin", "Wear.webp", "30 August 2022", [
+			["2.2.09.22081641N", "watch3plugin.2.2.09.22081641N.apk"],
 			["2.2.09.22071141N", "watch3plugin.2.2.09.22071141N.apk"],
 			["2.2.09.22042841N", "watch3plugin.2.2.09.22042841N.apk"],
 			["2.2.09.22041541N", "watch3plugin.2.2.09.22041541N.apk"],
@@ -180,7 +183,8 @@ function genApps(array $samsungApps) {
 			["2.2.07.22031041N", "activeplugin.2.2.07.22031041.apk"],
 			["2.2.07.22012741N", "activeplugin.apk"]
 		], Ratings::$Working),
-		new SamsungApp("Watch Active2 Plugin", "Wear.webp", "15 July 2022", [
+		new SamsungApp("Watch Active2 Plugin", "Wear.webp", "30 August 2022", [
+			["2.2.08.22081641N", "active2plugin.2.2.08.22081641N.apk"],
 			["2.2.08.22071141N", "active2plugin.2.2.08.22071141N.apk"],
 			["2.2.08.22042851", "active2plugin.2.2.08.22042851.apk"],
 			["2.2.08.22042841N", "active2plugin.2.2.08.22042841N.apk"],
